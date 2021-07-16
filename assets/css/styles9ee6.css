@@ -1,0 +1,883 @@
+/* Generales */
+
+:root {
+  --color-primario: #486a59;
+  /* rgb(72, 105, 88); */
+}
+
+/* @font-face {
+  font-family: 'BrittanySignature';
+  src: url("/assets/fonts/") format('truetype');
+} */
+
+/* :root {
+  --color-secundario: #486958; 
+} */
+
+body{
+  font-family: 'Montserrat';
+}
+
+.btn{
+  color: #ffffff;
+  background-color: var(--color-primario);
+  border-radius: 30px;
+  padding: 10px 40px;
+  border: 1px solid var(--color-primario);
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  color:var(--color-primario);
+  background-color: white;
+}
+
+.btn-alt{
+  color: var(--color-primario);
+  background-color: white;
+}
+
+.btn-alt:hover{
+  color: white;
+  background-color: var(--color-primario);
+  border: 1px solid white;
+}
+
+.btn:focus{
+  box-shadow:none;
+}
+
+
+.fancybox-bg{
+  background-color: var(--color-primario) !important;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
+/* Animacion fade in */
+.fade-in{
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
+/* Flecha para scroll de portada */
+.scroll-down {
+	position: absolute;
+	bottom: 70px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.89);
+  border-right: 4px solid rgba(255, 255, 255, 0.884);
+  z-index: 9;
+  left: calc(50% - 15px);
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    fade_move_down 2s ease-in-out infinite;
+	animation:         fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+
+
+/* Portada */
+section.portada{
+  height: 100vh;
+}
+
+/* ---------- */
+
+
+
+/* Frase */
+
+
+section.frase img.icon{
+  width: 250px;
+  padding-top: 50px;
+}
+
+
+section.frase{
+  text-align: center;
+  background-color: var(--color-primario);
+  padding:20px 0px 10px 0px;
+ 
+}
+section.frase p{
+  color: rgb(240, 209, 180);
+  font-size: 20px;
+  margin: 0;
+  padding-top: 35px; 
+  /* font-family: 'Satisfy', cursive; */
+}
+
+section.frase i{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Satisfy', cursive;
+}
+
+section.frase h4{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 20px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  padding-top: 5px;
+}
+
+
+/* ---------- */
+
+
+/* Cuenta Regresiva */
+
+section.cuenta-regresiva{
+  background-color: var(--color-primario);
+  text-align: center;
+  padding: 1px;
+  height: auto;
+  font-size: 25px;
+}
+
+/* section.cuenta-regresiva h4{
+  color: #000000;
+  font-size: 35px;
+  margin: 20px;
+  font-weight: 200;
+  letter-spacing: 20px;
+} */
+
+section.cuenta-regresiva .reloj {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ---------- */
+
+
+/* Nuestra Boda */
+
+section.nuestraboda{
+  text-align: center;
+  background-color:white;
+}
+
+
+section.nuestraboda h4{
+  color: black;
+  font-size: 35px;
+  margin: 20px;
+  font-weight: 200;
+  letter-spacing: 20px;
+}
+
+
+section.nuestraboda  img.icon{
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Cuenta Regresiva */
+
+
+
+/* ---------- */
+
+/* Ceremonia y Fiesta */
+
+section.ceremonia-fiesta{
+  padding: 10px 0 100px;
+}
+
+section.ceremonia-fiesta .columna{
+  text-align: center;
+  padding: 0 30px;
+}
+
+section.ceremonia-fiesta .columna h2{
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: var(--color-primario);
+}
+
+section.ceremonia-fiesta .columna p{
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+section.ceremonia-fiesta .columna img.icon{
+  width: 150px;
+}
+
+section.ceremonia-fiesta .columna img.icon-civil{
+  width: 132px;
+}
+
+
+
+
+/* ---------- */
+
+/* CEREMONIA (copia de seccion de CBU - Black) */
+
+
+section.ceremonia{
+  text-align: center;
+  padding: 20px 0;       /* cambiar distancia del boton valor de tarjeta */
+}
+
+section.ceremonia img.icon{
+  width: 150px;
+}
+
+section.ceremonia p{
+  color: black;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+/* ---------- */
+
+/* ----VALOR------ */
+
+.valor {
+  /* font-family: 'Martel', serif; */
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.separar_texto {
+  padding-bottom: 17px;
+}
+
+.punto {
+  color: var(--color-primario);
+}
+
+/* ----CBU tarjeta------ */
+
+.tarjeta {
+  padding: 0;   /* cambiar distancia del boton valor de tarjeta abajo*/
+}
+
+#hidden-cbu-tarjeta {
+  padding: 15px 15px 1px 15px;
+  border-radius: 10px;
+}
+
+
+#hidden-cbu-tarjeta span.title{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  color: var(--color-primario)
+}
+
+.datos_bancarios {
+  padding-bottom: 15px;
+}
+
+#hidden-cbu-tarjeta ul{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: 'Martel', serif;
+}
+
+
+#hidden-cbu-tarjeta ul li a{
+  color:#212529;
+  
+}
+
+
+/* ---------- */
+
+
+/* Galeria /Historia */
+
+
+/* 
+section.galeria h4{
+  color: black;
+  font-size: 35px;
+  margin: 20px;
+   font-weight: 200;
+  letter-spacing: 20px;
+}
+
+section.galeria  img.icon{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+section.galeria{
+  padding: 50px;
+    background-color:#edd9a9;
+      text-align: center;
+}
+
+section.galeria .text-gallery{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.galeria p{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.carousel-item img{
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+} */
+
+
+/* ---------- */
+
+/* Instagram */
+
+section.instagram{
+  text-align: center;
+  padding: 60px 0px 80px 0px;
+  background-color:rgb(238, 238, 238);
+  color:black;
+}
+
+section.instagram p{
+  color: black;
+  font-size: 15px;
+  padding-top:20px;
+}
+
+section.instagram h4{
+  color: black;
+  font-size: 35px;
+  margin: 0 0 30 0px;
+  font-weight: 200;
+}
+
+section.instagram p a{
+  color: var(--color-primario);
+}
+
+section.instagram  img.icon{
+  width: 150px;
+  margin-bottom: 0px;
+}
+
+
+
+/* CBU */
+
+section.cbu{
+  text-align: center;
+  padding: 45px 10px 100px 10px;
+  background-color: var(--color-primario);
+}
+
+section.cbu img.icon{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+section.cbu .cbu-inner {
+  background: #ffffff;
+  width: 70%;
+  padding: 40px;
+}
+
+section.cbu p{
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#hidden-cbu{
+  padding: 25px;
+  border-radius: 10px;
+}
+
+
+#hidden-cbu span.title{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  color: var(--color-primario);
+}
+
+#hidden-cbu span.datos_bancarios {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  color: var(--color-primario)
+}
+
+#hidden-cbu ul{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: 'Martel', serif;
+}
+
+
+#hidden-cbu ul li a{
+  color:#212529;
+}
+
+
+/* ---------- */
+
+#hidden-cbu1{
+  padding: 25px;
+  border-radius: 10px;
+}
+
+
+#hidden-cbu1 span.title{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  color: var(--color-primario)
+}
+
+#hidden-cbu1 span.datos_bancarios {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  color: var(--color-primario)
+}
+
+#hidden-cbu1 ul{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: 'Martel', serif;
+}
+
+
+#hidden-cbu1 ul li a{
+  color:#212529;
+}
+
+/* 
+.pileta { 
+  width: 250px;
+  padding-bottom: 10px;
+} */
+
+/* TARJETA DE BODA */
+
+
+section.tarjeta_precio{
+  text-align: center;
+  padding: 80px 0;
+  background-color: var(--color-primario);
+}
+
+section.tarjeta_precio .titulo_estadia {
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+section.tarjeta_precio .puntitos{
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #ecd298;
+  padding-bottom: 1px;
+}
+
+section.tarjeta_precio .texto_estadia {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 0 25px 10px 25px;
+}
+
+.pileta { 
+  width: 280px;
+  padding-left: 20px;
+  padding-bottom: 18px;
+}
+
+section.tarjeta_precio .tarjeta_precio-inner {
+  background: #fff;
+  width: 70%;
+  padding: 40px;
+}
+
+section.tarjeta_precio p{
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+/* ---------- */
+
+/* CONFIRMAR ASISTENCIA */
+
+section.asistencia{
+  text-align: center;
+  padding: 120px 0px 5px 0px;
+}
+
+/* 
+section.asistencia img.icon{
+  width: 145px;
+  padding: 20px;
+}
+
+
+  
+section.asistencia h4 {
+    font-weight: 400;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+}
+
+section.asistencia img.icon{
+  width: 150px;
+} */
+
+section.asistencia p {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  padding: 120px 0 0 0;
+}
+
+
+
+/* PROTOCOLO */
+
+section.protocolo{
+  text-align: center;
+  padding: 80px 10px 100px 10px;
+}
+
+section.protocolo h4 {
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    color:var(--color-primario);
+}
+/* 
+section.protocolo img.icon{
+  width: 150px;
+} */
+
+section.protocolo p{
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* ---------- */
+  
+
+/* CANCIONES */
+
+section.canciones{
+  text-align: center;
+  padding: 100px 0 100px;
+}
+
+section.canciones h4 {
+  color: black;
+  font-size: 35px;
+  margin: 20px;
+   font-weight: 200;
+
+}
+
+section.canciones .canciones-inner{
+  background: #fff;
+  width: 70%;
+  padding: 40px;
+}
+
+section.canciones h4 {
+    font-weight: 400;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    color:var(--color-primario)
+}
+
+section.canciones p{
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+
+/* ---------- */
+
+
+/* GRACIAS */
+
+section.gracias{
+  text-align: center;
+  padding: 36px 5px;
+  /* background-color: var(--color-primario); */
+}
+
+section.gracias p{
+  background-color: rgba(0, 0, 0, 0.384);
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding: 0px 5px;  
+  font-family: 'Satisfy', cursive;
+}
+
+/* ---------- */
+
+
+/* FOOTER */
+
+/* section.menu-footer{
+  background: #e6e6e6;
+  padding: 30px 0;
+}
+
+section.menu-footer ul li{
+  margin: 0 20px;
+}
+
+section.menu-footer ul a{
+  text-decoration: underline;
+  color: #999;
+  font-size: 13px;
+}
+
+section.menu-footer ul a:hover{
+  color: #35aa7f
+}
+
+
+
+section.footer{
+  text-align: center;
+  padding: 20px 0;
+  background-color: white;
+}
+
+section.footer p{
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+section.footer a{
+  color: #666;
+} */
+
+
+/* ---------- */
+
+/* CONTACTO */
+
+section.contacto{
+  padding: 100px 0;
+}
+
+section.contacto h4{
+  font-weight: 400;
+}
+
+section.contacto p{
+  font-weight: 300;
+}
+
+section.contacto a{
+  color: #35aa7f;
+}
+
+section.contacto a:hover{
+  color: black;
+}
+
+section.contacto ul li{
+  margin-bottom: 5px;
+}
+
+section.contacto ul li i{
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+
+
+
+
+
+
+/* ---------- */
+
+
+
+/* Medias queries */
+
+@media (max-width: 760px) {
+
+
+  .logo-portada img{
+    max-width: 70%;
+  }
+
+  .logo-portada{
+    text-align: center;
+  }
+
+  section.ceremonia-fiesta .row .columna:nth-child(2){
+    margin-top: 50px;
+  }
+
+  section.ceremonia-fiesta .row .columna.no-margin-top{
+    margin-top: 0;
+  }
+
+  section.menu-footer ul li{
+    margin-top: 10px;
+  }
+
+  section.cuenta-regresiva .reloj{
+    width: 100%;
+  }
+
+  section.confirmar-asistencia .asistencia-inner{
+    width: 100%;
+  }
+
+  section.cbu .cbu-inner{
+    width: 100%;
+  }
+
+  .contacto .col-md-6{
+    margin-bottom: 20px;
+  }
+
+}
