@@ -627,8 +627,41 @@ section.tarjeta_precio p{
 
 /* ---------- */
 
-/* CONFIRMAR ASISTENCIA */
 
+/* ASISTENCIA */
+
+section.asistencia {
+  text-align: center;
+  padding: 110px 0px 5px 0px;
+}
+
+/* section.asistencia img.icon{
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+section.asistencia .asistencia-inner {
+  background: #fff;
+  width: 70%;
+  padding: 40px;
+} */
+
+section.asistencia p {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  padding: 120px 0 0 0;
+}
+
+/* ...................... */
+
+
+
+
+
+/* CONFIRMAR ASISTENCIA */
+/* 
 section.confirmar-asistencia{
   text-align: center;
   padding: 100px 0 100px;
@@ -638,7 +671,7 @@ section.confirmar-asistencia .asistencia-inner{
   background: #fff;
   width: 70%;
   padding: 40px;
-}
+} */
 
 /* 
 section.asistencia img.icon{
