@@ -1,7 +1,7 @@
 /* Generales */
 
 :root {
-  --color-primario: #486a59;
+  --color-primario: #4b755f;
   /* rgb(72, 105, 88); */
 }
 
@@ -885,6 +885,7 @@ section.contacto ul li i{
 
   .logo-portada img{
     max-width: 70%;
+    margin-top: 65px;
   }
 
   .logo-portada{
