@@ -629,9 +629,15 @@ section.tarjeta_precio p{
 
 /* CONFIRMAR ASISTENCIA */
 
-section.asistencia{
+section.confirmar-asistencia{
   text-align: center;
-  padding: 120px 0px 5px 0px;
+  padding: 100px 0 100px;
+}
+
+section.confirmar-asistencia .asistencia-inner{
+  background: #fff;
+  width: 70%;
+  padding: 40px;
 }
 
 /* 
@@ -653,7 +659,7 @@ section.asistencia h4 {
 
 section.asistencia img.icon{
   width: 150px;
-} */
+} 
 
 section.asistencia p {
   color: rgb(255, 255, 255);
@@ -662,7 +668,7 @@ section.asistencia p {
   text-align: center;
   padding: 120px 0 0 0;
 }
-
+*/
 
 
 /* PROTOCOLO */
