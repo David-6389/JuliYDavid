@@ -3,7 +3,6 @@
 $('.parallax-portada').parallax({
   imageSrc: 'assets/img/portada-1-comprimido.jpg',
   speed: .1,
-  androidFix: false,
 });
 
 // Confirmar asistencia parallax
